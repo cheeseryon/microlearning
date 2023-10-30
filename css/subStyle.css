@@ -1,0 +1,183 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+
+html {font-size:0.625rem;}
+body {font-family:'Pretendard','Noto Sans KR', sans-serif; font-size:1.6rem; color:#333;}
+* {box-sizing:border-box;}
+.inner {width:90%; max-width:1500px; margin:0 auto;}
+.mobile {display:none;}
+.tabMobile {display:none;}
+.minMobileShow {display:none}
+
+header {position:fixed; width:100%; height:100px; border-bottom:1px solid #d9d9d9; background:#fff; z-index:50;}
+header .inner {display:flex; justify-content:space-between; height:100%;}
+header h1.logo {width:150px; height:100%;}
+header h1.logo > a {display:flex; align-items:center; height:100%;}
+header h1.logo > a img {width:100%;}
+header .gnb {display:flex;}
+header .gnb > li {position:relative;}
+header .gnb > li > a {display:block; padding-right:5.454em; line-height:100px; font-size:2rem; font-weight:700; transition:0.1s;}
+header .gnb > li > a:hover {color:#35afc0}
+header .gnb .subMenu {position:absolute; width:100%; height:auto; padding:1.25em 0; visibility:hidden; opacity:0; transition:0.2s;}
+header .gnb .subMenu li {width:100%; height:40px;}
+header .gnb .subMenu li a {display:block; line-height:40px; color:#777777; font-size:1.8rem; font-weight:500; transition:0.1s;}
+header .gnb .subMenu li a:hover {color:#333}
+header .gnb:hover .subMenu {visibility:visible; opacity:1;}
+/* header END */
+
+
+.gnbBg {position:fixed; top:100px; left:0; width:100%; height:170px; background:#f9f8f4; z-index:10; visibility:hidden; opacity:0; transition:0.2s;}
+.gnbBg.on {visibility:visible; opacity:1;}
+/* gnbBg End */
+
+
+#locationArea {position:relative; top:100px; height:220px;}
+#locationArea .inner {display: flex; align-items: center; height:100%;}
+#locationArea .inner > div {display:flex; justify-content:space-between; width:100%;}
+#locationArea .inner > div > div {display:inline-block}
+#locationArea .locaText p {margin-bottom:0.416em; font-family:'Raleway',sans-serif;font-size:2.4rem; ;color:#777;}
+#locationArea .locaText h3 {font-size:5rem; font-weight:600; color:#111;}
+#locationArea .locaLink ul {display:flex; justify-content: end; align-items:center; height:30px; opacity:0.6;}
+#locationArea .locaLink ul li {position:relative; display:inline-block; height:100%; margin:0 0.5em; line-height:30px; font-size:1.9rem; font-weight:500;}
+#locationArea .locaLink ul li.dot {width:20px; height:20px;}
+#locationArea .locaLink ul li.dot:before {content:''; position:absolute; top:7px; left:8px; display:block; width:6px; height:6px; border-radius:50%; background:#999; }
+#locationArea .locaLink ul li img {position:relative; top:-2px; width:26px; height:26px; margin-right:1em; opacity:0.6;}
+/* navArea End */
+
+#banner {position:relative; top:100px; height:320px}
+
+#banner.company .bgArea {position:absolute; width:100%; height:100%; background:url(../img/sub/sub_company_main_img.png) no-repeat center/cover;}
+#banner.eduInfo .bgArea {position:absolute; width:100%; height:100%; background:url(../img/sub/sub_eduinfo_main_img.png) no-repeat center/cover;}
+#banner.certificate .bgArea {position:absolute; width:100%; height:100%; background:url(../img/sub/sub_certificate_main_img.png) no-repeat center/cover;}
+#banner.community .bgArea {position:absolute; width:100%; height:100%; background:url(../img/sub/sub_community.png) no-repeat center/cover;}
+
+#banner .textArea {position:absolute; top:50%; left:0; transform:translateY(-50%); width:100%}
+#banner .textArea p {margin-bottom:0.4em; color:#fff; font-size:4.4rem; font-weight:500;}
+#banner .textArea h2 {color:#edb800; font-size:6rem; font-weight:700;}
+#banner.community .textArea h2  {color:#fff;}
+/* banner End */
+
+
+/* 서브페이지 공통 contentSec */
+.contentSec {position:relative; top:100px;}
+.contentSec .contentWrap {padding:5em 0;}
+/* 서브페이지 개별 contentSec */
+#compIntro .contentWrap {width: 70%; padding: 5em 0; margin: auto; word-break: keep-all;}
+#compIntro h4 {margin:0.833em 0 1.5em; color:#111; font-size:6rem; font-weight:700; text-align:center; letter-spacing:2px;}
+#compIntro .content {position:relative}
+#compIntro .item01 {color:#111; text-align:center;}
+#compIntro .item01 .sloganArea {position:absolute; bottom:0; left:50px; width: 100%;}
+#compIntro .item01 .sloganArea .slogan {margin-bottom:0.75em; font-size:4rem; font-weight:600; text-align: center;}
+#compIntro .item01 .sloganArea .slogan p > span{position:relative;}
+#compIntro .item01 .sloganArea .slogan .textTop > span:before {content:''; position:absolute; top:-6px; left:-30px; display:block; width:30px; height:30px; background:url(../img/ico/quote.png) no-repeat center/cover; opacity:0.6;}
+#compIntro .item01 .sloganArea .slogan .textBottom > span::after {content:''; position:absolute; bottom:-6px; right:-30px; display:block; width:30px; height:30px; background:url(../img/ico/quote.png) no-repeat center/cover; opacity:0.6; transform:rotate(180deg);}
+#compIntro .item01 .sloganArea > p {line-height:30px; font-size:2.2rem; font-weight:700;}
+#compIntro .item01 .imgBox {position:absolute; bottom:0; right:0; display: flex; justify-content: end; width:50%; height: auto;}
+#compIntro .item01 .imgBox img {width:83%; height:100%;}
+#compIntro .item02 {width:85%; margin: 0 auto; padding-bottom:13.75em;}
+#compIntro .item02 p {line-height:1.8; color:#555; font-size:2rem; font-weight:500; margin-bottom: 1em;}
+#compIntro .item02 p.colorText {margin:1em 0; line-height:1.5; color:#333; font-size:2rem; font-weight:600;}
+#compIntro .item02 p.colorText span {font-size:2.4rem;}
+#compIntro .blueColor {color:#36aeb9}
+#compIntro .redColor {color:#e54242}
+/* companyIntro END */
+
+#compHistory {position: relative;}
+#compHistory:before {content: ''; position: absolute; width:100%; height:100%; display: block; background:url(../img/sub/history_bg_img01.png) no-repeat; background-position: left 100px top 0; opacity: 0.5; z-index:-1;}
+#compHistory .inner {position: relative;}
+#compHistory .inner:before {content: ''; position: absolute; width:100%; height:100%; display: block; background:url(../img/sub/history_bg_img02.png) no-repeat right 0 bottom 0; opacity: 0.8; z-index:-1}
+#compHistory .content {margin-bottom:2.5em;}
+#compHistory .content > div {display:flex;}
+#compHistory .content > div p {margin-bottom: 1.111em; line-height:1.1; font-size:1.8rem; font-weight:600;}
+#compHistory .content > div .leftText {width:80px; text-wrap:nowrap;}
+#compHistory .content > div .rightText {width:100%; padding-left:40px;}
+#compHistory .content > div.colorText {color:#159398}
+/* companyHistory END */
+
+#compMap .map {position:relative; width:100%; margin-bottom:2.5em; border:1px solid #36aeb9; border-radius:50px 0 50px 0; overflow:hidden}
+#compMap .map iframe {width:100%;}
+#compMap .textInfo p {position:relative; margin-bottom:1.666em; padding-left:2.777em; color:#111; font-size:1.8rem; font-weight:600;}
+#compMap .textInfo .address:after {content:''; position:absolute; top:-4px; left:0; display:block; width:30px; height:30px; background:url(../img/ico/icoMap.png) no-repeat center/cover}
+#compMap .textInfo .transportation {margin-bottom:0.625em}
+#compMap .textInfo .transportation:before {content:''; position:absolute; top:3px; left:4px; display:block; width:24px; height:24px; background:url(../img/ico/icoBus.png) no-repeat center/cover}
+#compMap .textInfo .busNum span {display:inline-block; padding:0.312em 0.937em; margin-right:0.312em; border-radius:6px;}
+#compMap .textInfo .busNum span.red {border:1px solid rgb(192, 17, 17)}
+#compMap .textInfo .busNum span.green {border:1px solid rgb(39, 182, 20)}
+#compMap .textInfo .busNum span.blue {border:1px solid rgb(43, 52, 179)}
+/* companyMap END*/
+
+#certificate .tabMenu {margin-bottom:3.75em;}
+#certificate .tabMenu h5 {position:relative; margin-left: 1.4em; margin-bottom:1.818em; font-size:2.2rem; font-weight:600; color:#111;}
+#certificate .tabMenu h5:before {content:''; position:absolute; bottom:10px; left:-30px; display:block; width:18px; height:5px; background:#309f6b}
+#certificate .tabMenu ul {display: flex; margin-bottom: 10px;}
+#certificate .tabMenu ul > li {display: flex; align-items: center; width:calc(100% / 4); padding: 0.625em; border:1px solid rgba(0, 0, 0, 0.15); font-weight:600; letter-spacing:-1px; text-align:center;}
+#certificate .tabMenu ul > li + li {margin-left: -1px;}
+#certificate .tabMenu ul > li a {display:block; width:100%;} 
+#certificate .tabMenu ul > li.on {background:#159398; color:#fff;}
+#certificate .tabList .item {display:none;}
+#certificate .tabList .item.on {display:block;}
+#certificate .tabList .contTop {margin: 0 auto 3.75em;}
+#certificate .tabList .contTop h5:before {content:''; position:absolute; bottom:10px; left:-30px; display:block; width:18px; height:5px; background:#309f6b}
+#certificate .tabList .contTop h4 {margin-bottom:0.833em; font-size:2.4rem; font-weight:600; color:#309f6b;}
+#certificate .tabList .contTop p {color:#555; font-size:1.8rem; line-height:2; font-weight:500;}
+#certificate .tabList .contMiddle {display:flex; justify-content:center; margin-bottom:5em;}
+#certificate .tabList .contMiddle > div { width:35%; min-width: 400px; border-top:3px solid #e5803c; text-align:center; margin: 0 5%;}
+#certificate .tabList .contMiddle p {display:flex; justify-content:center; align-items:center;}
+#certificate .tabList .contMiddle p span {padding:0.833em 0; font-size:1.8rem; font-weight:600; color:#111} 
+#certificate .tabList .contMiddle p span.orangeColor {margin-left: 1.111em; color:#e5803c} 
+#certificate .tabList .contMiddle img.authentication {width:90%; min-width:160px}
+#certificate .tabList .contMiddle img.badge {position:relative; top:30px; width:55%; min-width:180px;}
+#certificate .tabList .contBottom {position:relative;  display: flex; justify-content: center;  margin:0 0 5em; }
+#certificate .tabList .contBottom:before {content:''; position:absolute; top:0; left:55%; transform:translateX(-50%); display:block; width:1px; height:100%; background:#e2e2e2}
+#certificate .tabList .contBottom > .leftBox {width: 50%;}
+#certificate .tabList .contBottom .textItem {margin-bottom:1.875em;}
+#certificate .tabList .contBottom .textItem:last-child {margin-bottom:0;}
+#certificate .tabList .contBottom .textItem p {padding: 0 1.25em; color:#555; font-size:1.8rem; font-weight:500;}
+#certificate .tabList .contBottom .textItem p a.link:hover {color:#111}
+#certificate .tabList .contBottom .textItem .title {position:relative; color:#111;font-size:1.8rem; font-weight:700; margin-bottom:0.555em;}
+#certificate .tabList .contBottom .textItem .title::before {content:''; position:absolute; top:0; left:0; display:block; width:4px; height:20px; background:#e5803c}
+#certificate .fileDownload {height:60px; margin-top:3.5em; text-align: center;}
+#certificate .fileDownload a {padding:12px 18px; border-radius:5px; background: #1d9565fb; border: 1px solid transparent; color:#ffffff; font-size: 1.6rem; font-weight: 500; transition:0.1s;}
+#certificate .fileDownload a:hover {background: #fff; border-color: #309f6b; color: #309f6b}
+/* certificate END */
+
+
+/*  추가서브페이지 - 교육원소개 */
+/* eduInfo */
+#eduInfo .contentWrap {
+    padding: 4em 0 6em
+}
+#eduInfo .comming_img {
+    max-width: 440px;
+    height: 440px;
+    margin: 0 auto;
+    background: url(../img/img_commingsoon.png) no-repeat center;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+/* 추가 서브페이지 - 공지사항 */
+/* notice */
+#notice .contentWrap ul {padding:0 2.5em;}
+#notice .contentWrap ul li {border-bottom:1px solid #dfdfdf;}
+#notice .contentWrap ul li div.title {height:100px;}
+#notice .contentWrap ul li div.title p {height:100%;}
+#notice .contentWrap ul li div.title p a{position: relative;  display:block; height:100%; line-height: 100px; font-size: 2rem; font-weight: 600;  overflow:hidden;
+    text-overflow:ellipsis; white-space:nowrap; }
+#notice .contentWrap ul li div.title p a:before {content:''; position: absolute; top:50%; right:0; transform:translateY(-50%); width:20px; height: 20px; background: url(../img/ico/showBtn.png) no-repeat center/cover;}
+#notice .contentWrap ul li div.title.on p a:before {background: url(../img/ico/hideBtn.png) no-repeat center/cover;}
+
+#notice .contentWrap ul li div.content {display: block; height:0; margin-bottom: 0; padding: 0 1.25em; font-size: 1.8rem; overflow: hidden; transition: 0.5s;}
+#notice .contentWrap ul li div.content > div {padding-bottom:2.222em;}
+#notice .contentWrap ul li div.content p {position: relative; margin-bottom: 0.625em;}
+#notice .contentWrap ul li div.content p:last-child {margin-bottom:0;}
+#notice .contentWrap ul li div.content p:before {content:''; position: absolute; top:7px; left:-12px; width:6px; height: 6px; border-radius:50%; background: #999;}
+
+
+
+/* 서브페이지 개별 contentSec END */
+footer {position:relative; top:100px; display:flex; justify-content:center; height:180px; background:#666666;}
+footer div {padding:2.5em 0;}
+footer div p {line-height:1.5; color:#b4b4b4; font-size:1.4rem; text-align:center}
+footer div p span {margin:0 1em;}

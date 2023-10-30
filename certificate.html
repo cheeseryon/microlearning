@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICRO LEARNING</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/subStyle.css">
+    <link rel="stylesheet" href="css/sub_mobile.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1 class="logo"><a href="index.html"><img src="img/main_logo.png" alt=""></a></h1>
+                <nav class="web">
+                    <ul class="gnb">
+                        <li>
+                            <a href="compIntro.html">마이크로러닝 소개</a>
+                            <ul class="subMenu">
+                                <li><a href="compIntro.html">회사소개</a></li>
+                                <li><a href="compHistory.html">회사연혁</a></li>
+                                <li><a href="compMap.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="eduInfo.html">교육원 소개</a>
+                            <ul class="subMenu">
+                                <li><a href="eduInfo.html">교육원 소개</a></li>
+                                <li><a href="certificate.html">자격증 과정</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="comunityNotice.html">커뮤니티</a>
+                            <ul class="subMenu">
+                                <li><a href="comunityNotice.html">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href='javascript:void(0);'>제휴사</a>
+                            <ul class="subMenu">
+                                <li><a href="https://www.meta.camp/" target="_blank">메타캠프</a></li>
+                                <li><a href="http://kohvea.kr/" target="_blank">한국 고등직업교육학회</a></li>
+                                <li><a href="https://www.lecos.co.kr/kor" target="_blank">(주) 레코스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="gnbBg"></div>
+
+        <span class="hamburgerBtn"><a href='javascript:void(0);'></a></span>
+        <div class="mobileGnbBg"></div>
+        <nav class="mobile">
+            <ul class="mobileGnb">
+                <li class="mobileGnbHeaer">                                      
+                    <h1 class="logo"><a href="index.html"><img src="img/main_logo.png" alt=""></a></h1>
+                    <span class="closeBtn"></span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="menuOpenBtn">마이크로러닝 소개</a>
+                    <ul class="subMenu">
+                        <li><a href="compIntro.html">회사소개</a></li>
+                        <li><a href="compHistory.html">회사연혁</a></li>
+                        <li><a href="compMap.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="menuOpenBtn">교육원 소개</a>
+                    <ul class="subMenu">
+                        <li><a href="eduInfo.html">교육원소개</a></li>
+                        <li><a href="certificate.html">자격증 과정</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="menuOpenBtn">커뮤니티</a>
+                    <ul class="subMenu">
+                        <li><a href="comunityNotice.html">공지사항</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="menuOpenBtn">제휴사</a>
+                    <ul class="subMenu">
+                        <li><a href="https://www.meta.camp/" target="_blank">메타캠프</a></li>
+                        <li><a href="http://kohvea.kr/" target="_blank">한국 고등직업교육학회</a></li>
+                        <li><a href="https://www.lecos.co.kr/kor" target="_blank">(주) 레코스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <section id="locationArea">
+            <div class="inner">
+                <div>
+                    <div class="locaText">
+                        <p>INTRODUCTION TO CERTIFICATION PROGRAMS</p>
+                        <h3>자격증 소개</h3>
+                    </div>
+                    <div class="locaLink">
+                        <ul>
+                            <li>                            
+                                <a href="index.html">
+                                    <img src="img/ico/ico_home.png" alt="">
+                                    HOME
+                                </a>
+                            </li>
+                            <li class="dot"></li>                                          
+                            <li>교육원 소개</li>     
+                            <li class="dot"></li>
+                            <li>자격증 소개</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="banner" class="certificate">
+            <div class="bgArea"></div>         
+            <div class="textArea">
+                <div class="inner minMobileHide">
+                    <p>가치있는 정보, 평등한 교육이 현실이 되는</p>
+                    <h2>마이크로러닝</h2>
+                </div>
+
+                <div class="inner minMobileShow">
+                    <p>가치있는 정보,<br>평등한 교육이 현실이 되는</p>
+                    <h2>마이크로러닝</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificate" class="contentSec">
+            <div class="inner">
+                <div class="contentWrap">
+                    <div class="tabMenu">
+                        <h5>전문가 자격증</h5>
+                        <ul>
+                            <li class="on"><a href="#">챗GPT 교육전문가(2급) 과정</a></li>
+                            <li><a href="#">창업 마스터(1급) 과정</a></li>
+                            <li><a href="#">창업 마스터(2급) 과정</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">메타버스 윤리전문가 과정</a></li>      
+                            <li><a href="#">메타버스 교육전문가(2급) 과정</a></li>
+                            <li><a href="#">메타버스 콘텐츠크리에이터(1급) 자격증</a></li>
+                            <li><a href="#">메타버스 콘텐츠크리에이터(2급) 자격증</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tabListWrap">
+                        <ul class="tabList">
+                            <li class="item item01 on">
+                                <div class="contTop">                                    
+                                    <h4>챗GPT 교육전문가(2급) 과정</h4>
+                                    <p>챗GPT의 생성기술을 이용하여, 프롬프트 작성 능력, 생성형 인공지능을 활용한 업무 적용 능력의 향상을 통해 능률적으로 업무를 수행하는 직무와 챗GPT 직무 교육을 실시하는 직무 및 '챗GPT교육전문가 2급'을 양성하는   직무를 수행</p>
+                                </div>
+                                <div class="contMiddle">
+                                    <div class="certificate">
+                                        <p>
+                                            <span>자격증</span>
+                                            <span class="orangeColor">CERIFICATE OF APPRECIATION</span>
+                                        </p>
+                                        <img src="img/sub/cert_chatgpt_2.png" class="authentication "alt="자격증 사진">
+                                    </div>
+                                    <div class="digitalBadge">
+                                        <p>
+                                            <span>디지털 배지</span>
+                                            <span class="orangeColor">DIGITAL BADGE</span>
+                                        </p>
+                                        <img src="img/sub/badge_chatgpt.png" class="badge"alt="자격증 사진">
+                                    </div>
+                                </div>
+
+                                <div class="contBottom">
+                                    <div class="leftBox">
+                                        <div class="textItem">
+                                            <p class="title">한국직업능력연구원등록 - 민간자격증</p>
+                                            <p>민간자격증(등록 No. 2023-003844) - [주무부처 : 과학기술정부통신부]</p>
+                                            <p>관계법령 : 자격기본법 제18425호 제17조 제2항</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 기관</p>
+                                            <p>(사) 한국고등직업교육학회 / (주)마이크로러닝</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">수료증 발급</p>
+                                            <p>교육기간 중 80% 이상 수강 후 설문 작성하면 수료 가능</p>
+                                            <p>수료증 PDF 파일 발급</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급</p>
+                                            <p>수료 후 과제 제출하면 검정 후 자격증 발급</p>
+                                            <p>신청자에게 한해 종이자격증(등기발송)과 디지털 배지 발급(메일 발송)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightBox">
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 비용</p>
+                                            <p>50,000원 (종이 자격증 & 디지털 배지)</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">연수신청</p>
+                                            <p><a href="https://naver.me/5D3cCrE5" class="link" target="_blank">https://naver.me/5D3cCrE5</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 신청</p>
+                                            <p><a href="https://naver.me/Gt94zA21" target="_blank"  class="link">https://naver.me/Gt94zA21</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">회원학교연수비용</p>
+                                            <p> 학생(200,000원) / 교직원 (200,000원)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fileDownload clear">
+                                    <a href="pdf/PDF01.pdf" target="_blank">교육과정 PDF파일</a>
+                                </div>
+                            </li>
+                            <!-- item01 END -->
+
+                            <li class="item item02">
+                                <div class="contTop">
+                                    <h4>창업 마스터(1급) 과정 </h4>
+                                    <p>예비창업자 및 초기 창업 기업의 창업 역량 강화를 위한 심화 과정으로 4단계(사업운영 및 관리), 5단계(우리 회사 알리기) 과정으로 구성되어 있다.</p>
+                                </div>
+                                <div class="contMiddle">
+                                    <div>
+                                        <p>
+                                            <span>자격증</span>
+                                            <span class="orangeColor">CERIFICATE OF APPRECIATION</span>
+                                        </p>
+                                        <img src="img/sub/cert_startup_1.jpg" class="authentication "alt="자격증 사진">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>디지털 배지</span>
+                                            <span class="orangeColor">DIGITAL BADGE</span>
+                                        </p>
+                                        <img src="img/sub/badge_startup_1.png" class="badge"alt="자격증 사진">
+                                    </div>
+                                </div>
+
+                                <div class="contBottom">
+                                    <div class="leftBox">
+                                        <div class="textItem">
+                                            <p class="title">한국직업능력연구원등록 - 민간자격증</p>
+                                            <p>민간자격증(등록 No. 2023-002896) - [주무부처 : 중소벤처기업부]</p>
+                                            <p>관계법령 : 자격기본법 제18425호 제17조 제2항</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 기관</p>
+                                            <p>(사) 한국고등직업교육학회 / (주)마이크로러닝</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">수료증 발급</p>
+                                            <p>교육기간 중 80% 이상 수강 후 설문 작성하면 수료 가능</p>
+                                            <p>수료증 PDF 파일 발급</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급</p>
+                                            <p>수료 후 과제 제출하면 검정 후 자격증 발급</p>
+                                            <p>신청자에게 한해 종이자격증(등기발송)과 디지털 배지 발급(메일 발송)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightBox">
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 비용</p>
+                                            <p>50,000원 (종이 자격증 & 디지털 배지)</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">연수신청</p>
+                                            <p><a href="https://naver.me/5D3cCrE5" class="link" target="_blank">https://naver.me/5D3cCrE5</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 신청</p>
+                                            <p><a href="https://naver.me/Gt94zA21" target="_blank"  class="link">https://naver.me/Gt94zA21</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">회원학교연수비용</p>
+                                            <p> 학생(200,000원) / 교직원 (200,000원)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fileDownload clear">
+                                    <a href="pdf/PDF02.pdf" target="_blank">교육과정 PDF파일</a>
+                                </div>
+                            </li>
+                            <!-- item02 END -->
+
+                            <li class="item item03">
+                                <div class="contTop">
+                                    <h4>창업 마스터(2급) 과정 </h4>
+                                    <p>예비창업자 및 초기 창업 기업의 창업 역량 강화를 위한 과정으로 1단계(창업 마인드셋), 2단계(소상공인 창업정보), 3단계(사업 분석 및 구체화) 과정으로 구성되어 있다.</p>
+                                </div>
+                                <div class="contMiddle">
+                                    <div>
+                                        <p>
+                                            <span>자격증</span>
+                                            <span class="orangeColor">CERIFICATE OF APPRECIATION</span>
+                                        </p>
+                                        <img src="img/sub/cert_startup_2.jpg" class="authentication "alt="자격증 사진">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>디지털 배지</span>
+                                            <span class="orangeColor">DIGITAL BADGE</span>
+                                        </p>
+                                        <img src="img/sub/badge_startup_2.png" class="badge"alt="자격증 사진">
+                                    </div>
+                                </div>
+
+                                <div class="contBottom">
+                                    <div class="leftBox">
+                                        <div class="textItem">
+                                            <p class="title">한국직업능력연구원등록 - 민간자격증</p>
+                                            <p>민간자격증(등록 No. 2023-002896) - [주무부처 : 중소벤처기업부]</p>
+                                            <p>관계법령 : 자격기본법 제18425호 제17조 제2항</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 기관</p>
+                                            <p>(사) 한국고등직업교육학회 / (주)마이크로러닝</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">수료증 발급</p>
+                                            <p>교육기간 중 80% 이상 수강 후 설문 작성하면 수료 가능</p>
+                                            <p>수료증 PDF 파일 발급</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급</p>
+                                            <p>수료 후 과제 제출하면 검정 후 자격증 발급</p>
+                                            <p>신청자에게 한해 종이자격증(등기발송)과 디지털 배지 발급(메일 발송)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightBox">
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 비용</p>
+                                            <p>50,000원 (종이 자격증 & 디지털 배지)</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">연수신청</p>
+                                            <p><a href="https://naver.me/5D3cCrE5" class="link" target="_blank">https://naver.me/5D3cCrE5</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 신청</p>
+                                            <p><a href="https://naver.me/Gt94zA21" target="_blank"  class="link">https://naver.me/Gt94zA21</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">회원학교연수비용</p>
+                                            <p> 학생(200,000원) / 교직원 (200,000원)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fileDownload clear">
+                                    <a href="pdf/PDF03.pdf" target="_blank">교육과정 PDF파일</a>
+                                </div>
+                            </li>
+                            <!-- item03 END -->
+
+                            <li class="item item04">
+                                <div class="contTop">
+                                    <h4>메타버스윤리전문가 과정</h4>
+                                    <p>직접 대면이 이루어지지 않는 3차원 가상 세계인 메타버스를 이용하는 일반인, 학생, 교직원 등 사용자를 대상으로 건전한 메타버스 문화를 조성하기위한 윤리 교육</p>
+                                </div>
+                                <div class="contMiddle">
+                                    <div>
+                                        <p>
+                                            <span>자격증</span>
+                                            <span class="orangeColor">CERIFICATE OF APPRECIATION</span>
+                                        </p>
+                                        <img src="img/sub/cert_metabus_ethics.png" class="authentication "alt="자격증 사진">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>디지털 배지</span>
+                                            <span class="orangeColor">DIGITAL BADGE</span>
+                                        </p>
+                                        <img src="img/sub/badge_metabus_ethics.png" class="badge"alt="자격증 사진">
+                                    </div>
+                                </div>
+
+                                <div class="contBottom">
+                                    <div class="leftBox">
+                                        <div class="textItem">
+                                            <p class="title">한국직업능력연구원등록 - 민간자격증</p>
+                                            <p>민간자격증(등록 No. 2022-003120) - [주무부처 : 과학기술정부통신부]</p>
+                                            <p>관계법령 : 자격기본법 제18425호 제17조 제2항</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 기관</p>
+                                            <p>(사) 한국고등직업교육학회 / (주)마이크로러닝</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">수료증 발급</p>
+                                            <p>교육기간 중 80% 이상 수강 후 설문 작성하면 수료 가능</p>
+                                            <p>수료증 PDF 파일 발급</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급</p>
+                                            <p>수료 후 과제 제출하면 검정 후 자격증 발급</p>
+                                            <p>신청자에게 한해 종이자격증(등기발송)과 디지털 배지 발급(메일 발송)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightBox">
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 비용</p>
+                                            <p>50,000원 (종이 자격증 & 디지털 배지)</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">연수신청</p>
+                                            <p><a href="https://naver.me/5D3cCrE5" class="link" target="_blank">https://naver.me/5D3cCrE5</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 신청</p>
+                                            <p><a href="https://naver.me/Gt94zA21" target="_blank"  class="link">https://naver.me/Gt94zA21</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">회원학교연수비용</p>
+                                            <p> 학생(200,000원) / 교직원 (200,000원)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fileDownload clear">
+                                    <a href="pdf/PDF04.pdf" target="_blank">교육과정 PDF파일</a>
+                                </div>
+                            </li>
+                            <!-- item04 END -->
+
+                            <li class="item item05">
+                                <div class="contTop">
+                                    <h4>메타버스교육전문가(2급) 과정</h4>
+                                    <p>메타버스 4세계 증강현실 가상 세계와 현실을 연계하여 사회, 문화, 경제 등 다양한 분야에 새로운 가치를 창출하는 메타버스 공간에서 수업 등 교육 과정을 운영하는 직무를  수행 </p>
+                                </div>
+                                <div class="contMiddle">
+                                    <div>
+                                        <p>
+                                            <span>자격증</span>
+                                            <span class="orangeColor">CERIFICATE OF APPRECIATION</span>
+                                        </p>
+                                        <img src="img/sub/cert_metabus_edu.png" class="authentication "alt="자격증 사진">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>디지털 배지</span>
+                                            <span class="orangeColor">DIGITAL BADGE</span>
+                                        </p>
+                                        <img src="img/sub/badge_metabu_edu.png" class="badge"alt="자격증 사진">
+                                    </div>
+                                </div>
+
+                                <div class="contBottom">
+                                    <div class="leftBox">
+                                        <div class="textItem">
+                                            <p class="title">한국직업능력연구원등록 - </p>
+                                            <p>(등록 No. 2022-003121) -  [ 주무부처 : 과학기술정부통신부]</p>
+                                            <p>관계법령 : 자격기본법 제18425호 제17조 제2항</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 기관</p>
+                                            <p>(사) 한국고등직업교육학회 / (주)마이크로러닝</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">수료증 발급</p>
+                                            <p>교육기간 중 80% 이상 수강 후 설문 작성하면 수료 가능</p>
+                                            <p>수료증 PDF 파일 발급</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급</p>
+                                            <p>수료 후 과제 제출하면 검정 후 자격증 발급</p>
+                                            <p>신청자에게 한해 종이자격증(등기발송)과 디지털 배지 발급(메일 발송)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightBox">
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 비용</p>
+                                            <p>50,000원 (종이 자격증 & 디지털 배지)</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">연수신청</p>
+                                            <p><a href="https://naver.me/5D3cCrE5" class="link" target="_blank">https://naver.me/5D3cCrE5</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 신청</p>
+                                            <p><a href="https://naver.me/Gt94zA21" target="_blank"  class="link">https://naver.me/Gt94zA21</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">회원학교연수비용</p>
+                                            <p> 학생(200,000원) / 교직원 (200,000원)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fileDownload clear">
+                                    <a href="pdf/PDF05.pdf" target="_blank">교육과정 PDF파일</a>
+                                </div>
+                            </li>
+                            <!-- item05 END -->
+
+                            <li class="item item06">
+                                <div class="contTop">
+                                    <h4>메타버스크리에이터(1급) 자격증</h4>
+                                    <p>증강 현실 콘텐츠 플랫폼인 Spark AR 플랫폼의 기본적인 사항 & 전문적인 AR효과 과정을 배워서 증강 현실 콘텐츠 크리에이터가 되는 전문가 과정입니다.</p>
+                                </div>
+                                <div class="contMiddle">
+                                    <div>
+                                        <p>
+                                            <span>자격증</span>
+                                            <span class="orangeColor">CERIFICATE OF APPRECIATION</span>
+                                        </p>
+                                        <img src="img/sub/cert_metabus_creator_1.png" class="authentication "alt="자격증 사진">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>디지털 배지</span>
+                                            <span class="orangeColor">DIGITAL BADGE</span>
+                                        </p>
+                                        <img src="img/sub/badge_metabuscreator_1.png" class="badge"alt="자격증 사진">
+                                    </div>
+                                </div>
+
+                                <div class="contBottom">
+                                    <div class="leftBox">
+                                        <div class="textItem">
+                                            <p class="title">한국직업능력연구원등록 - 민간자격증</p>
+                                            <p>민간자격증(등록 No. 2022-003119) -  [ 주무부처 : 과학기술정부통신부]</p>
+                                            <p>관계법령 : 자격기본법 제18425호 제 17조 제 2항</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 기관</p>
+                                            <p>(사) 한국고등직업교육학회 / (주)마이크로러닝</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">수료증 발급</p>
+                                            <p>교육기간 중 80% 이상 수강 후 설문 작성하면 수료 가능</p>
+                                            <p>수료증 PDF 파일 발급</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급</p>
+                                            <p>수료 후 과제 제출하면 검정 후 자격증 발급</p>
+                                            <p>신청자에게 한해 종이자격증(등기발송)과 디지털 배지 발급(메일 발송)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightBox">
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 비용</p>
+                                            <p>50,000원 (종이 자격증 & 디지털 배지)</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">연수신청</p>
+                                            <p><a href="https://naver.me/5D3cCrE5" class="link" target="_blank">https://naver.me/5D3cCrE5</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 신청</p>
+                                            <p><a href="https://naver.me/Gt94zA21" target="_blank"  class="link">https://naver.me/Gt94zA21</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">회원학교연수비용</p>
+                                            <p>학생(150,000원) / 교직원 (300,000원)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fileDownload clear">
+                                    <a href="pdf/PDF06.pdf" target="_blank">교육과정 PDF파일</a>
+                                </div>
+                            </li>
+                            <!-- item06 END -->
+
+                            <li class="item item07">
+                                <div class="contTop">
+                                    <h4>메타버스크리에이터(2급) 자격증</h4>
+                                    <p>현실 세계와 같은 사회, 경제, 문화 활동까지 이뤄지는 메타버스 가상 공간에서 다루어지는 콘텐츠를 기획하고                                        커스텀 아바타 제작 과정 및 아바타를 활용한 버츄얼유투버(VTuber) 과정</p>
+                                </div>
+                                <div class="contMiddle">
+                                    <div>
+                                        <p>
+                                            <span>자격증</span>
+                                            <span class="orangeColor">CERIFICATE OF APPRECIATION</span>
+                                        </p>
+                                        <img src="img/sub/cert_metabus_creator_2.png" class="authentication "alt="자격증 사진">
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span>디지털 배지</span>
+                                            <span class="orangeColor">DIGITAL BADGE</span>
+                                        </p>
+                                        <img src="img/sub/badge_metabuscreator_2.png" class="badge"alt="자격증 사진">
+                                    </div>
+                                </div>
+
+                                <div class="contBottom">
+                                    <div class="leftBox">
+                                        <div class="textItem">
+                                            <p class="title">한국직업능력연구원등록 - 민간자격증</p>
+                                            <p>민간자격증(등록 No. 2022-003119) -  [ 주무부처 : 과학기술정부통신부]</p>
+                                            <p>관계법령 : 자격기본법 제18425호 제 17조 제 2항</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 기관</p>
+                                            <p>(사) 한국고등직업교육학회 / (주)마이크로러닝</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">수료증 발급</p>
+                                            <p>교육기간 중 80% 이상 수강 후 설문 작성하면 수료 가능</p>
+                                            <p>수료증 PDF 파일 발급</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급</p>
+                                            <p>수료 후 과제 제출하면 검정 후 자격증 발급</p>
+                                            <p>신청자에게 한해 종이자격증(등기발송)과 디지털 배지 발급(메일 발송)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="rightBox">
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 비용</p>
+                                            <p>50,000원 (종이 자격증 & 디지털 배지)</p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">연수신청</p>
+                                            <p><a href="https://naver.me/5D3cCrE5" class="link" target="_blank">https://naver.me/5D3cCrE5</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">자격증 발급 신청</p>
+                                            <p><a href="https://naver.me/Gt94zA21" target="_blank"  class="link">https://naver.me/Gt94zA21</a></p>
+                                        </div>
+                                        <div class="textItem">
+                                            <p class="title">회원학교연수비용</p>
+                                            <p>학생(150,000원) / 교직원 (300,000원)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fileDownload clear">
+                                    <a href="pdf/PDF07.pdf" target="_blank">교육과정 PDF파일</a>
+                                </div>
+                            </li>                            
+                        </ul>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <p class="minMobileHide">사업장주소: 경기도 성남시 수정구 복정로 76, 5동 4층 5404호 창업지원센터(복정동, 동서울대학교)</p>
+                <p class="minMobileShow">사업장주소: 경기도 성남시 수정구 복정로 76,<br>5동 4층 5404호 창업지원센터(복정동, 동서울대학교)</p>
+                <p>사업자등록번호: 568-87-02316<span>|</span>통신판매업신고 : 2023-성남수정-0746호</p>
+                <p>대표: 신의상<span>|</span>개인정보보호책임자: 유시완<span></span>대표전화:1588-8785<span></span>팩스번호:031-990-6757</p>
+                <p>이메일: group@microlearning.ac</p></br>               
+                <p>&copy;주식회사 마이크로러닝 ALL RIGHT RESERVED</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

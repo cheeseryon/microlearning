@@ -1,0 +1,292 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html {font-size:0.625rem;}
+body {font-family:'Pretendard','Noto Sans KR', sans-serif; font-size:1.6rem; color:#333;}
+* {box-sizing:border-box;}
+.inner {width:90%; max-width:1500px; margin:0 auto;}
+.minMobileShow {display:none}
+
+@media screen and (min-width:993px) and (max-width:1400px) {
+    header .gnb > li > a {font-size:1.8rem;}
+    header .gnb > li:nth-child(-n+3) > a {padding-right:4.444em;}
+    header .gnb .subMenu li a {font-size:1.6rem;}
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    #locationArea .locaText p {font-size:2.2rem;}
+    #locationArea .locaText h3 {font-size:4.6rem;}
+    #locationArea .locaLink ul {height:22px}
+    #locationArea .locaLink ul li {margin:0 0.2em; line-height:22px; font-size:1.8rem; }
+    #locationArea .locaLink ul li img {width:22px; height:22px; margin-right:0.5em;}
+
+    .contentSec .contentWrap {padding:5em 0;}
+    #compIntro h4 {margin:0.833em 0 2em;}
+    #compIntro .item01 {float:right; width:50%}
+    #compIntro .item01 .sloganArea {position:relative; left:-6px; float:right; width:83%; margin-bottom:3em; }
+    #compIntro .item01 .imgBox {position:relative; width:100%; height:100%;}
+    #compIntro .item02 {float:left;}
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .web {display:none}
+    .mobile {display:block;}
+    .tabMobile {display:block;}
+
+    .hamburgerBtn {position:fixed; top:32px; right:40px; display:block; width:34px; height:34px; background:url(../img/ico/hambuger.png) no-repeat center/cover; z-index:300;}
+    .mobileGnbBg {position:fixed; top:0; left:0; width:100%; visibility:hidden; height:100%; background:#000; opacity:0; z-index:200; transition:0.7s;}
+    .mobileGnbBg.on {visibility:visible; opacity:0.3;}
+
+    .mobile {position:relative; overflow:hidden;}
+    .mobileGnb {position:fixed; top:0; right:-400px; width:400px; height:100vh; border-left:1px solid #e2e2e2; background:#fff; z-index:500; transition:0.7s;}
+    .mobileGnb.on {right:0}
+    /* .mobileGnb > li {border-bottom:1px solid #e2e2e2} */
+    .mobileGnb > li > a {position:relative; display:block; padding:0 1.5em; line-height:70px; font-size:2rem; font-weight:500;}
+    .mobileGnb > li > a.on:before {background:url(../img/ico/hideBtn.png) no-repeat center/cover;}
+    .mobileGnb > li + li > a:before {content:''; position:absolute; top:50%; right:40px; transform:translateY(-50%); display:block; width:16px; height:16px; background:url(../img/ico/showBtn.png) no-repeat center/cover; opacity:0.7;} 
+    .mobileGnb > li:first-child {position:relative; height:100px; padding:0 1.875em; border-bottom:1px solid #e2e2e2}
+    .mobileGnb > li:first-child h1 {display:inline-block; width:150px; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a {display:flex; align-items:center; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a img {width:100%;}
+    .mobileGnb > li:first-child span {position:absolute; top:50%; right:35px; transform:translateY(-50%); width:28px; height:28px; background:url(../img/ico/close.png) no-repeat center/cover;}
+
+    .mobileGnb .subMenu {overflow:hidden; height:0; background:#f9f8f4; transition:0.5s;}
+    .mobileGnb .subMenu > li {height:50px; padding:0 2.5em;} 
+    .mobileGnb .subMenu > li > a {display:block; height:100%; line-height:50px;} 
+    /* mobile END */
+
+    #locationArea {height:200px;}
+    #locationArea .locaText p {font-size:1.8rem;}
+    #locationArea .locaText h3 {font-size:3.6rem;}
+    #locationArea .locaLink ul {display:none;}
+    /* locationArea END */
+  
+    #banner {height:420px;}
+    #banner.company .bgArea {background:url(../img/sub/sub_company_main_img.png) no-repeat center/cover;}
+    #banner .textArea p {font-size:3.8rem;}
+    #banner .textArea h2 {font-size:5rem;}
+    /* banner END */
+
+
+    /* 서브페이지 공통 contentSec */
+    .contentSec .contentWrap {padding:5em 0;}
+    /* 서브페이지 개별 contentSec */
+    #compIntro h4 {margin:0.833em 0 2em; font-size:4.6rem}
+    #compIntro .item01 .sloganArea {position:relative; left:0; width:100%; margin-bottom:3em;}
+    #compIntro .item01 .sloganArea .slogan {font-size:3.6rem;}
+    #compIntro .item01 .sloganArea > p {font-size:2rem;}
+    #compIntro .item01 .imgBox {position:relative; width:100%; justify-content:center;}
+    #compIntro .item01 .imgBox img{position:relative; width:500px; margin-bottom:3em;}
+
+    #compIntro .item02 {width:500px; padding-bottom:0; margin: 0 auto;}
+    #compIntro .item02 p {font-size:1.8rem;}
+    #compIntro .item02 p.colorText {font-size:2rem;}
+    #compIntro .item02 p.colorText span {font-size:2.2rem;}
+    
+    /* compIntro  END */
+    #compHistory .content > div p {font-size:1.7rem;}
+    #compHistory:before {display:none;}
+    #compHistory .inner:before {display:none;}
+    /* compHistory END */
+    #compMap .textInfo p {font-size:1.6rem;}
+    /* compMap END */
+    #certificate .tabMenu .contTop h5 {font-size:2rem}
+    #certificate .tabMenu ul > li a {font-size:1.4rem;}
+    #certificate .tabList .contTop {margin-bottom:2.5em;}
+    #certificate .tabList .contTop h4 {font-size:2rem}
+    #certificate .tabList .contTop p {font-size:1.6rem;}
+    #certificate .tabList .contMiddle > div {width:48%; margin:0 2%; min-width:330px;}
+    #certificate .tabList .contBottom:before {display:none;}
+    #certificate .tabList .contBottom > div {width:48%; margin:0 2%; min-width:330px;}
+    #certificate .tabList .contBottom .textItem p {font-size:1.6rem;}
+    #certificate .tabList .contBottom .textItem p.title {font-size:1.8rem;}
+    /* certificate ENd */
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .web {display:none}
+    .mobile {display:block;}
+    .tabMobile {display:block;}
+
+    header {height:80px;}
+    .hamburgerBtn {position:fixed; top:24px; right:30px; display:block; width:34px; height:34px; background:url(../img/ico/hambuger.png) no-repeat center/cover; z-index:300;}
+    .mobileGnbBg {position:fixed; top:0; left:0; width:100%; visibility:hidden; height:100%; background:#000; opacity:0; z-index:200; transition:0.7s;}
+    .mobileGnbBg.on {visibility:visible; opacity:0.3;}
+
+    .mobile {position:relative; overflow:hidden;}
+    .mobileGnb {position:fixed; top:0; right:-400px; width:400px; height:100vh; border-left:1px solid #e2e2e2; background:#fff; z-index:500; transition:0.7s;}
+    .mobileGnb.on {right:0}
+    .mobileGnb > li > a {position:relative; display:block; padding:0 1.5em; line-height:70px; font-size:2rem; font-weight:500;}
+    .mobileGnb > li > a.on:before {background:url(../img/ico/hideBtn.png) no-repeat center/cover;}
+    .mobileGnb > li + li > a:before {content:''; position:absolute; top:50%; right:30px; transform:translateY(-50%); display:block; width:16px; height:16px; background:url(../img/ico/showBtn.png) no-repeat center/cover; opacity:0.7;} 
+    .mobileGnb > li:first-child {position:relative; height:80px; padding:0 1.875em; border-bottom:1px solid #e2e2e2}
+    .mobileGnb > li:first-child h1 {display:inline-block; width:150px; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a {display:flex; align-items:center; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a img {width:100%;}
+    .mobileGnb > li:first-child span {position:absolute; top:50%; right:35px; transform:translateY(-50%); width:28px; height:28px; background:url(../img/ico/close.png) no-repeat center/cover;}
+    .mobileGnb .subMenu {overflow:hidden; height:0; background:#f9f8f4; transition:0.5s;}
+    .mobileGnb .subMenu > li {height:50px; padding:0 2.5em;} 
+    .mobileGnb .subMenu > li > a {display:block; height:100%; line-height:50px;} 
+    /* mobileGnb END */
+
+    #locationArea {height:160px;}
+    #locationArea .locaText p {font-size:1.8rem;}
+    #locationArea .locaText h3 {font-size:3.6rem;}
+    #locationArea .locaLink ul {display:none;}
+    #locationArea .locaText p {font-size:1.8rem;}
+    #locationArea .locaText h3 {font-size:3rem;}
+    #locationArea .locaLink ul {display:none;}
+    /* locationArea END */
+    
+    #banner {height:360px;}
+    #banner.company .bgArea {background:url(../img/sub/sub_company_main_img.png) no-repeat center/cover;}
+    #banner .textArea p {font-size:3rem;}
+    #banner .textArea h2 {font-size:4rem;}
+    /* banner END */
+
+
+    /* 서브페이지 공통 contentSec */
+    .contentSec .contentWrap {padding:5em 0;}
+    /* 서브페이지 개별 contentSec */
+    #compIntro h4 {margin:0.833em 0 2em; font-size:4rem}
+    #compIntro .item01 .sloganArea {position:relative; left:0; width:100%; margin-bottom:3em;}
+    #compIntro .item01 .sloganArea .slogan {font-size:3.2rem;}
+    #compIntro .item01 .sloganArea > p {font-size:1.8rem;}
+    #compIntro .item01 .imgBox {position:relative; width:100%; justify-content:center;}
+    #compIntro .item01 .imgBox img{position:relative; width:80%; margin-bottom:3em;}
+
+    #compIntro .item02 {width:80%; margin: 0 auto; padding-bottom:0;}
+    #compIntro .item02 p {font-size:1.6rem;}
+    #compIntro .item02 p.colorText {font-size:1.8rem;}
+    #compIntro .item02 p.colorText span {font-size:2rem;}
+    /* compIntro END */
+    #compHistory:before {display:none;}
+    #compHistory .inner:before {display:none;}
+    #compHistory .content > div p {font-size:1.4rem;}
+    #compHistory .content > div .rightText {padding-left:1.25em;}
+    /* compHistory END */
+    #compMap .textInfo p {font-size:1.6rem;}
+    /* compMap END */
+    #certificate .tabMenu h5 {font-size:2rem}
+    #certificate .tabMenu ul {flex-wrap:wrap;}
+    #certificate .tabMenu ul > li {width:25%;}
+    #certificate .tabMenu ul > li:nth-child(5) {margin-left:0;}
+    #certificate .tabMenu ul > li:nth-child(n+5) {margin-top:-1px;}
+    #certificate .tabMenu ul > li a {font-size:1.4rem;}
+    #certificate .tabList .contTop {margin-bottom:2.5em;}
+    #certificate .tabList .contTop h4 {font-size:2rem}
+    #certificate .tabList .contTop p {font-size:1.6rem;}
+    #certificate .tabList .contMiddle {flex-direction:column; margin-bottom:3.75em;}
+    #certificate .tabList .contMiddle > div {width:60%; margin:1.25em auto 1.25em; min-width:330px;}
+    #certificate .tabList .contBottom {flex-direction:column;}
+    #certificate .tabList .contBottom:before {display:none;}
+    #certificate .tabList .contBottom > div {width:100%; margin:1.25em auto; min-width:330px;}
+    #certificate .tabList .contBottom .textItem p {font-size:1.6rem;}
+    #certificate .tabList .contBottom .textItem p.title {font-size:1.8rem;}
+    /* certificate END */
+
+    #notice .contentWrap ul li div.title p a {font-size: 1.8rem;}
+    #notice .contentWrap ul li div.content p {font-size: 1.6rem;}
+    /* notice END */
+}
+
+@media screen and (max-width:576px) {
+    .web {display:none}
+    .minMobileHide {display:none;}
+    .mobile {display:block;}
+    .tabMobile {display:block;}
+    .minMobileShow {display:block;}
+
+    header {height:80px;}
+    .hamburgerBtn {position:fixed; top:24px; right:20px; display:block; width:28px; height:28px; background:url(../img/ico/hambuger.png) no-repeat center/cover; z-index:300;}
+    .mobileGnbBg {position:fixed; top:0; left:0; width:100%; visibility:hidden; height:100%; background:#000; opacity:0; z-index:200; transition:0.7s;}
+    .mobileGnbBg.on {visibility:visible; opacity:0.3;}
+
+    .mobile {position:relative; overflow:hidden;}
+    .mobileGnb {position:fixed; top:0; right:-400px; width:100%; max-width:400px; height:100vh; border-left:1px solid #e2e2e2; background:#fff; z-index:500; transition:0.7s;}
+    .mobileGnb.on {right:0}
+    /* .mobileGnb > li {border-bottom:1px solid #e2e2e2} */
+    .mobileGnb > li > a {position:relative; display:block; padding:0 1.5em; line-height:70px; font-size:2rem; font-weight:500;}
+    .mobileGnb > li > a.on:before {background:url(../img/ico/hideBtn.png) no-repeat center/cover;}
+    .mobileGnb > li + li > a:before {content:''; position:absolute; top:50%; right:20px; transform:translateY(-50%); display:block; width:16px; height:16px; background:url(../img/ico/showBtn.png) no-repeat center/cover; opacity:0.7;} 
+    .mobileGnb > li:first-child {position:relative; height:80px; padding:0 1.875em; border-bottom:1px solid #e2e2e2}
+    .mobileGnb > li:first-child h1 {display:inline-block; width:150px; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a {display:flex; align-items:center; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a img {width:100%;}
+    .mobileGnb > li:first-child span {position:absolute; top:49%; right:20px; transform:translateY(-50%); width:26px; height:26px; background:url(../img/ico/close.png) no-repeat center/cover;}
+    .mobileGnb .subMenu {overflow:hidden; height:0; background:#f9f8f4; transition:0.5s;}
+    .mobileGnb .subMenu > li {height:50px; padding:0 2.5em;} 
+    .mobileGnb .subMenu > li > a {display:block; height:100%; line-height:50px;} 
+    /* mobileGnb END */
+
+    #locationArea {height:140px;}
+    #locationArea .locaText p {font-size:1.7rem;}
+    #locationArea .locaText h3 {font-size:2.3rem;}
+    #locationArea .locaLink ul {display:none;}
+    /* locationArea END */
+    
+    #banner {height:280px;}
+    #banner.company .bgArea {background:url(../img/sub/sub_company_main_img.png) no-repeat center/cover;}
+    #banner .textArea {text-align:center;}
+    #banner .textArea p {font-size:2.4rem;}
+    #banner .textArea h2 {font-size:3.6rem;}
+    /* banner END */
+
+
+    /* 서브페이지 공통 contentSec */
+    .contentSec .contentWrap {padding:2.5em 0;}
+    /* 서브페이지 개별 contentSec */
+    #compIntro h4 {margin:0.833em 0 2em; font-size:3.2rem}
+    #compIntro .item01 .sloganArea {position:relative; left:0; width:100%; margin-bottom:3em;}
+    #compIntro .item01 .sloganArea .slogan {font-size:2.6rem;}
+    #compIntro .item01 .sloganArea > p {font-size:1.6rem;}
+    #compIntro .item01 .imgBox {position:relative; width:100%; justify-content:center;}
+    #compIntro .item01 .imgBox img{position:relative; width:80%; margin-bottom:3em;}
+    #compIntro .item02 {width:80%;  margin:0 auto; padding-bottom:0;}
+    #compIntro .item02 p {font-size:1.4rem;}
+    #compIntro .item02 p.colorText {font-size:1.6rem;}
+    #compIntro .item02 p.colorText span {font-size:1.8rem;}
+    /* compIntro END */
+    #compHistory:before {display: none;}
+    #compHistory .inner:before {display:none;}
+    #compHistory .content > div p {font-size:1.4rem;}
+    #compHistory .content > div .rightText {padding-left:1.25em;}
+    /* compHistory END */
+    #compMap .textInfo p {font-size:1.4rem;}
+    #compMap .textInfo .busNum span {font-size:1.3rem;}
+    /* compMap END */
+    #certificate .tabMenu h5 {font-size:2rem}
+    #certificate .tabMenu ul {flex-wrap:wrap;}
+    #certificate .tabMenu ul > li {width:50%;}
+
+    #certificate .tabMenu ul > li:nth-child(3),
+    #certificate .tabMenu ul > li:nth-child(5),
+    #certificate .tabMenu ul > li:nth-child(7) {margin-left:0;}
+
+    #certificate .tabMenu ul > li:nth-child(n+3) {margin-top:-1px;}
+    #certificate .tabMenu ul > li a {font-size:1.4rem;}
+    #certificate .tabList .contTop {margin-bottom:1.25em;}
+    #certificate .tabList .contTop h4 {font-size:1.8rem}
+    #certificate .tabList .contTop p {font-size:1.4rem;}
+    #certificate .tabList .contMiddle {flex-direction:column; margin-bottom:3.75em;}
+    #certificate .tabList .contMiddle > div {width:70%; margin:1.25em auto 1.25em; min-width:240px;}
+    #certificate .tabList .contMiddle p span {font-size:1.5rem;}
+    #certificate .tabList .contMiddle p span:last-child {width:50%;}
+    #certificate .tabList .contMiddle img.badge {min-width:130px;}
+    #certificate .tabList .contBottom {flex-direction:column;}
+    #certificate .tabList .contBottom:before {display:none;}
+    #certificate .tabList .contBottom > div {width:100%; margin:0.625em auto; min-width:240px;}
+    #certificate .tabList .contBottom .textItem {margin-bottom:1.25em;}
+    #certificate .tabList .contBottom .textItem p {font-size:1.4rem;}
+    #certificate .tabList .contBottom .textItem .title {font-size:1.5rem;}
+    #certificate .tabList .contBottom .textItem .title::before {top:2px; left:6px; width:3px; height:12px}
+    /* certificate END */
+
+    #notice .contentWrap ul li div.title p a {font-size: 1.8rem;}
+    #notice .contentWrap ul li div.content p {font-size: 1.6rem;}
+    /* notice END */
+
+    footer div p {font-size:1.3rem;}
+    footer div p span {margin:0 0.5em;}
+}
+

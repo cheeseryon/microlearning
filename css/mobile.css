@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+html {font-size:0.625rem;}
+body {font-family:'Pretendard','Noto Sans KR', sans-serif; font-size:1.6rem; color:#333;}
+* {box-sizing:border-box;}
+#wrap {overflow:hidden;}
+.inner {width:90%; max-width:1500px; margin:0 auto;}
+
+@media screen and (min-width:993px) and (max-width:1400px) {
+    header .gnb > li:nth-child(-n+3) > a {padding-right:2.8em;}
+    header .gnb .subMenu li a  {font-size:1.7rem;}
+    #mainVisual .mainTextArea ul li {font-size:3.8rem;}
+    #mainVisual .mainTextArea h2 {font-size:6.4rem;}
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+    .web {display:none}
+    .mobile {display:block;}
+
+    .hamburgerBtn {position:fixed; top:32px; right:40px; display:block; width:34px; height:34px; background:url(../img/ico/hambuger.png) no-repeat center/cover; z-index:100;}
+    .mobileGnbBg {position:fixed; top:0; left:0; width:100%; visibility:hidden; height:100%; background:#000; opacity:0; z-index:200; transition:0.7s;}
+    .mobileGnbBg.on {visibility:visible; opacity:0.3;}
+    .mobile {position:relative;}
+    .mobileGnb {position:absolute; top:0; right:-400px; width:400px; height:100vh; border-left:1px solid #e2e2e2; background:#fff; z-index:500; transition:0.7s;}
+    .mobileGnb.on {right:0}
+    /* .mobileGnb > li {border-bottom:1px solid #e2e2e2} */
+    .mobileGnb > li > a {position:relative; display:block; padding:0 1.5em; line-height:70px; font-size:2rem; font-weight:500;}
+    .mobileGnb > li > a.on:before {background:url(../img/ico/hideBtn.png) no-repeat center/cover;}
+    .mobileGnb > li + li > a:before {content:''; position:absolute; top:50%; right:40px; transform:translateY(-50%); display:block; width:16px; height:16px; background:url(../img/ico/showBtn.png) no-repeat center/cover; opacity:0.7;} 
+    .mobileGnb > li:first-child {position:relative; height:100px; padding:0 1.875em; border-bottom:1px solid #e2e2e2}
+    .mobileGnb > li:first-child h1 {display:inline-block; width:150px; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a {display:flex; align-items:center; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a img {width:100%;}
+    .mobileGnb > li:first-child span {
+        position:absolute; top:50%; right:35px; transform:translateY(-50%); width:28px; height:28px;
+        background:url(../img/ico/close.png) no-repeat center/cover;}
+    .mobileGnb .subMenu {overflow:hidden; height:0; background:#f9f8f4; transition:0.5s;}
+    .mobileGnb .subMenu > li {height:40px; padding:0 2.5em;} 
+    .mobileGnb .subMenu > li > a {display:block; height:100%; line-height:40px;} 
+
+    #mainVisual .slide01 {background:url(../img/main_banner_01.png) no-repeat top right -100px/cover;}
+    #mainVisual .slide02 {background:url(../img/main_banner_05.png) no-repeat top right -100px/cover;}
+    #mainVisual .slide03 {background:url(../img/main_banner_02.png) no-repeat top right -100px/cover;}
+
+    #mainVisual .mainTextArea ul li {font-size:3rem;}
+    #mainVisual .mainTextArea h2 {font-size:4.8rem;}
+    #mainVisual .mainTextArea div span a {font-size:1.8rem;}
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .web {display:none}
+    .mobile {display:block;}
+    header {height:80px;}
+   
+    .hamburgerBtn {position:fixed; top:22px; right:40px; display:block; width:34px; height:34px; background:url(../img/ico/hambuger.png) no-repeat center/cover; z-index:100;}
+    .mobileGnbBg {position:fixed; top:0; left:0; width:100%; visibility:hidden; height:100%; background:#000; opacity:0; z-index:200; transition:0.7s;}
+    .mobileGnbBg.on {visibility:visible; opacity:0.3;}
+
+    .mobile {position:relative;}
+    .mobileGnb {position:absolute; top:0; right:-400px; width:400px; height:100vh; border-left:1px solid #e2e2e2; background:#fff; z-index:500; transition:0.7s;}
+    .mobileGnb.on {right:0}
+    /* .mobileGnb > li {border-bottom:1px solid #e2e2e2} */
+    .mobileGnb > li > a {position:relative; display:block; padding:0 1.5em; line-height:70px; font-size:2rem; font-weight:500;}
+    .mobileGnb > li > a.on:before {background:url(../img/ico/hideBtn.png) no-repeat center/cover;}
+    .mobileGnb > li + li > a:before {content:''; position:absolute; top:50%; right:40px; transform:translateY(-50%); display:block; width:16px; height:16px; background:url(../img/ico/showBtn.png) no-repeat center/cover; opacity:0.7;} 
+    .mobileGnb > li:first-child {position:relative; height:80px; padding:0 1.875em; border-bottom:1px solid #e2e2e2}
+    .mobileGnb > li:first-child h1 {display:inline-block; width:150px; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a {display:flex; align-items:center; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a img {width:100%;}
+    .mobileGnb > li:first-child span {position:absolute; top:50%; right:35px; transform:translateY(-50%); width:28px; height:28px; background:url(../img/ico/close.png) no-repeat center/cover;}
+
+    .mobileGnb .subMenu {overflow:hidden; height:0; background:#f9f8f4; transition:0.5s;}
+    .mobileGnb .subMenu > li {height:40px; padding:0 2.5em;} 
+    .mobileGnb .subMenu > li > a {display:block; height:100%; line-height:40px;} 
+
+    #mainVisual .slide01 {background:url(../img/main_bg01.png) no-repeat center/cover;}
+    #mainVisual .slide02 {background:url(../img/main_bg02.png) no-repeat center/cover;}
+    #mainVisual .slide03 {background:url(../img/main_bg03.png) no-repeat center/cover;}
+    #mainVisual .mainTextArea {text-align:center;}
+    #mainVisual .mainTextArea ul li {font-size:3.2rem;}
+    #mainVisual .mainTextArea h2 {margin-top:0.3em; font-size:4rem;}
+    #mainVisual .mainTextArea .linkBtn {min-width:240px; margin:3em auto 0;}
+    #mainVisual .mainTextArea .linkBtn span {height:50px}
+    #mainVisual .mainTextArea .linkBtn span a {line-height:48px; font-size:1.6rem;}
+
+    #mainVisual .mainFooter p {font-size:1.2rem; text-align:center;}
+} 
+
+@media screen and (max-width:576px) {
+    .web {display:none}
+    .mobile {display:block;}
+    header {height:80px;}
+
+    .hamburgerBtn {position:fixed; top:22px; right:40px; display:block; width:34px; height:34px; background:url(../img/ico/hambuger.png) no-repeat center/cover; z-index:100;}
+    .mobileGnbBg {position:fixed; top:0; left:0; width:100%; visibility:hidden; height:100%; background:#000; opacity:0; z-index:200; transition:0.7s;}
+    .mobileGnbBg.on {visibility:visible; opacity:0.3;}
+    
+    .mobile {position:relative;}
+    .mobileGnb {position:absolute; top:0; right:-400px; width:100%; max-width:400px; height:100vh; border-left:1px solid #e2e2e2; background:#fff; z-index:500; transition:0.7s;}
+    .mobileGnb.on {right:0}
+    /* .mobileGnb > li {border-bottom:1px solid #e2e2e2} */
+    .mobileGnb > li > a {position:relative; display:block; padding:0 1.5em; line-height:70px; font-size:2rem; font-weight:500;}
+    .mobileGnb > li > a.on:before {background:url(../img/ico/hideBtn.png) no-repeat center/cover;}
+    .mobileGnb > li + li > a:before {
+        content:''; position:absolute; top:50%; right:40px; transform:translateY(-50%);
+        display:block; width:16px; height:16px; background:url(../img/ico/showBtn.png) no-repeat center/cover; opacity:0.7;} 
+    .mobileGnb > li:first-child {position:relative; height:80px; padding:0 1.875em; border-bottom:1px solid #e2e2e2}
+    .mobileGnb > li:first-child h1 {display:inline-block; width:150px; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a {display:flex; align-items:center; height:100%;}
+    .mobileGnb > li:first-child h1.logo > a img {width:100%;}
+    .mobileGnb > li:first-child span {position:absolute; top:50%; right:35px; transform:translateY(-50%); width:28px; height:28px; background:url(../img/ico/close.png) no-repeat center/cover;}
+    .mobileGnb .subMenu {overflow:hidden; height:0; background:#f9f8f4; transition:0.5s;}
+    .mobileGnb .subMenu > li {height:40px; padding:0 2.5em;} 
+    .mobileGnb .subMenu > li > a {display:block; height:100%; line-height:40px;} 
+
+    #mainVisual .slide01 {background:url(../img/main_bg01.png) no-repeat center/cover;}
+    #mainVisual .slide02 {background:url(../img/main_bg02.png) no-repeat center/cover;}
+    #mainVisual .slide03 {background:url(../img/main_bg03.png) no-repeat center/cover;}
+
+    #mainVisual .mainTextArea {color:#fff; text-align:center;}
+    #mainVisual .mainTextArea ul li {font-size:2.6rem;}
+    #mainVisual .mainTextArea h2 {margin-top:0.3em; font-size:3.4rem;}
+    #mainVisual .mainTextArea .linkBtn {width:90%; min-width:220px; margin:3em auto 0;}
+    #mainVisual .mainTextArea .linkBtn span {height:40px}
+    #mainVisual .mainTextArea .linkBtn span a {line-height:38px; font-size:1.4rem;}
+
+    #mainVisual .mainFooter p {font-size:1.2rem; text-align:center;}
+}
+
