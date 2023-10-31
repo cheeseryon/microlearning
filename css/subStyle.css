@@ -146,16 +146,9 @@ header .gnb:hover .subMenu {visibility:visible; opacity:1;}
 
 /*  추가서브페이지 - 교육원소개 */
 /* eduInfo */
-#eduInfo .contentWrap {
-    padding: 4em 0 6em
-}
-#eduInfo .comming_img {
-    max-width: 440px;
-    height: 440px;
-    margin: 0 auto;
-    background: url(../img/img_commingsoon.png) no-repeat center;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
+#eduInfo .contentWrap {padding: 4em 0 6em}
+#eduInfo .comming_img {max-width: 440px; height: 440px; margin: 0 auto; background: url(../img/img_commingsoon.png) no-repeat center; box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+
 
 /* 추가 서브페이지 - 공지사항 */
 /* notice */
@@ -173,7 +166,6 @@ header .gnb:hover .subMenu {visibility:visible; opacity:1;}
 #notice .contentWrap ul li div.content p {position: relative; margin-bottom: 0.625em;}
 #notice .contentWrap ul li div.content p:last-child {margin-bottom:0;}
 #notice .contentWrap ul li div.content p:before {content:''; position: absolute; top:7px; left:-12px; width:6px; height: 6px; border-radius:50%; background: #999;}
-
 
 
 /* 서브페이지 개별 contentSec END */
