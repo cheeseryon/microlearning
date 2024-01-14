@@ -60,10 +60,10 @@ header .gnb:hover .subMenu {visibility:visible; opacity:1;}
 /* banner End */
 
 
-/* 서브페이지 공통 contentSec */
-.contentSec {position:relative; top:100px;}
-.contentSec .contentWrap {padding:5em 0;}
-/* 서브페이지 개별 contentSec */
+/* 서브페이지 공통 content */
+.contentArea {position:relative; top:100px;}
+.contentArea .contentWrap {padding:5em 0;}
+/* 서브페이지 개별 content */
 #compIntro .contentWrap {width: 70%; padding: 5em 0; margin: auto; word-break: keep-all;}
 #compIntro h4 {margin:0.833em 0 1.5em; color:#111; font-size:6rem; font-weight:700; text-align:center; letter-spacing:2px;}
 #compIntro .content {position:relative}
@@ -91,7 +91,7 @@ header .gnb:hover .subMenu {visibility:visible; opacity:1;}
 #compHistory .content {margin-bottom:2.5em;}
 #compHistory .content > div {display:flex;}
 #compHistory .content > div p {margin-bottom: 1.111em; line-height:1.1; font-size:1.8rem; font-weight:600;}
-#compHistory .content > div .leftText {width:80px; text-wrap:nowrap;}
+#compHistory .content > div .leftText {width:80px; whtie-space:nowrap;}
 #compHistory .content > div .rightText {width:100%; padding-left:40px;}
 #compHistory .content > div.colorText {color:#159398}
 /* companyHistory END */
@@ -144,14 +144,12 @@ header .gnb:hover .subMenu {visibility:visible; opacity:1;}
 /* certificate END */
 
 
-/*  추가서브페이지 - 교육원소개 */
-/* eduInfo */
+
 #eduInfo .contentWrap {padding: 4em 0 6em}
 #eduInfo .comming_img {max-width: 440px; height: 440px; margin: 0 auto; background: url(../img/img_commingsoon.png) no-repeat center; box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+/* eduInfo  END */
 
 
-/* 추가 서브페이지 - 공지사항 */
-/* notice */
 #notice .contentWrap ul {padding:0 2.5em;}
 #notice .contentWrap ul li {border-bottom:1px solid #dfdfdf;}
 #notice .contentWrap ul li div.title {height:100px;}
@@ -166,9 +164,10 @@ header .gnb:hover .subMenu {visibility:visible; opacity:1;}
 #notice .contentWrap ul li div.content p {position: relative; margin-bottom: 0.625em;}
 #notice .contentWrap ul li div.content p:last-child {margin-bottom:0;}
 #notice .contentWrap ul li div.content p:before {content:''; position: absolute; top:7px; left:-12px; width:6px; height: 6px; border-radius:50%; background: #999;}
+/* notice END*/
+/* 서브페이지 개별 content END */
 
 
-/* 서브페이지 개별 contentSec END */
 footer {position:relative; top:100px; display:flex; justify-content:center; height:180px; background:#666666;}
 footer div {padding:2.5em 0;}
 footer div p {line-height:1.5; color:#b4b4b4; font-size:1.4rem; text-align:center}
