@@ -180,7 +180,7 @@ body {font-family:'Pretendard','Noto Sans KR', sans-serif; font-size:1.6rem; col
     #certificate .tabList .contMiddle > div {width:60%; margin:1.25em auto 1.25em; min-width:330px;}
     #certificate .tabList .contBottom {flex-direction:column;}
     #certificate .tabList .contBottom:before {display:none;}
-    #certificate .tabList .contBottom > div {width:100%; margin:1.25em auto; min-width:330px;}
+    #certificate .tabList .contBottom > div {width:50%; margin:1.25em auto; min-width:330px;}
     #certificate .tabList .contBottom .textItem p {font-size:1.6rem;}
     #certificate .tabList .contBottom .textItem p.title {font-size:1.8rem;}
     /* certificate END */
